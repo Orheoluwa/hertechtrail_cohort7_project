@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
     --primary: #f134f1;
-    --secondary: rgb(43, 6, 9);
+    --secondary: #6d036d;
     --light: #f0f6ff;
-    --dark: #3f033a;
+    --dark: #b803a9;
 }
 
 /*** Spinner ***/
@@ -310,7 +310,7 @@ h6,
 
 .feature-item:hover {
     margin-top: -15px;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.5rem 1.5rem rgba(94, 29, 100, 0.08);
 }
 
 /*** Pricing ***/
