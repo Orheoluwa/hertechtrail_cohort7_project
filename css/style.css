@@ -174,7 +174,7 @@ h6,
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    color: var(--dark) !important;
+    color: var(--light) !important;
     outline: none;
     transition: 0.5s;
 }
@@ -203,7 +203,7 @@ h6,
 }
 
 .navbar-light .navbar-brand h1 {
-    color: #b40b9e;
+    color: #f5f1f4;
 }
 
 .navbar-light .navbar-brand img {
