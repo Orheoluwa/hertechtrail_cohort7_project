@@ -5,7 +5,9 @@
     --light: #f0f6ff;
     --dark: #b803a9;
 }
-
+html, body {
+    overflow-x: hidden;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -215,6 +217,35 @@ h6,
     max-height: 45px;
 }
 
+@media (min-width: 992px) {
+    .navbar-light {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    .sticky-top.navbar-light {
+        position: fixed;
+        background: #ffffff;
+    }
+
+    .sticky-top.navbar-light .navbar-nav .nav-link::before {
+        border-top-color: var(--primary);
+    }
+
+    .sticky-top.navbar-light .navbar-brand h1 {
+        background: linear-gradient(
+            to bottom right,
+            var(--primary),
+            var(--secondary)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
         position: relative;
@@ -257,34 +288,7 @@ h6,
     }
 }
 
-@media (min-width: 992px) {
-    .navbar-light {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 999;
-    }
 
-    .sticky-top.navbar-light {
-        position: fixed;
-        background: #ffffff;
-    }
-
-    .sticky-top.navbar-light .navbar-nav .nav-link::before {
-        border-top-color: var(--primary);
-    }
-
-    .sticky-top.navbar-light .navbar-brand h1 {
-        background: linear-gradient(
-            to bottom right,
-            var(--primary),
-            var(--secondary)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
 
 /*** Hero Header ***/
 .hero-header {
